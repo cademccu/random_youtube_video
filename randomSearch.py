@@ -2,6 +2,7 @@ import urllib.request
 import re
 import random
 import string
+import sys
 
 
 def getSearchString(length):
@@ -20,8 +21,11 @@ def getVideoList(query):
     return "https://www.youtube.com/watch?v=" + video_ids[random.randrange(len(video_ids))]
 
 def main():
+    DEFAULT_LENGTH = 5
+    if len(sys.argv) == 2:
+        DEFAULT_LENGTH = int(sys.argv[1])
     while True:
-        query = getSearchString(5)
+        query = getSearchString(DEFAULT_LENGTH)
         print("SEARCH STRING: " + query)
         URL = getVideoList(query)
         if URL is not None:
