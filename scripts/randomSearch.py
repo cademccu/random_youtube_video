@@ -33,7 +33,7 @@ def main():
             # This would be where I could use a chromedriver or open the webpage
             # in something to be extra quirky.
             ######################################################################
-            print("Random URL: " + URL)
+            print("Random URL: \n" + URL)
             break
 
     return 0

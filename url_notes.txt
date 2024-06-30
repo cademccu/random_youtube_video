@@ -1,0 +1,38 @@
+
+
+https://www.youtube.com/watch?v=gocwRvLhDf8
+
+damn
+
+base 64 - using the set of all upper/lower letters, number, -_
+
+26 + 26 + 10 + 2
+
+
+could also LOOKUP random things and pull teh first few URLS
+
+==================================
+VALIDATING RANDOMLY GENERATED URLS
+==================================
+
+* curl'ing the URL
+    returns the webpage and a 200 response -- not ideal as it would
+    be perfect if it threw  a 404 or something else that could be easily
+    parsed.
+
+    can literally grep for "This video isn't available anymore" which seems
+    to work reliably, but is hackey
+
+* wget the page
+    same as above, returns whole entire HTML and 200 status code
+
+
+TODO
+generate several random urls -- command line option to do so
+
+
+
+
+https://en.wikipedia.org/wiki/Special:Random
+
+returns a random wikpedia page...
